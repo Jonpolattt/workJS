@@ -33,7 +33,7 @@ window.addEventListener("DOMContentLoaded", function () {
       behavior: "smooth",
     });
   });
-  
+
   //   Navigator
   const navWrapper = document.querySelector(".navigator"),
     tabs = navWrapper.querySelectorAll("li a");
@@ -59,5 +59,12 @@ window.addEventListener("DOMContentLoaded", function () {
         }
       });
     }
+  });
+
+  const burger = document.querySelector(".nav-menu"),
+    burgerBtn = document.querySelector(".burger-btn");
+
+  burgerBtn.addEventListener("click", function () {
+    burger.classList.toggle('active')
   });
 });

@@ -15,24 +15,25 @@
 <body>
     <!-- HEADER -->
     <header>
-        <nav class="nav ">
+        <nav class="nav">
             <div class="d-flex">
                 <div class="d-flex">
                     <span>JS</span>
-                    <h2>Jonpo'lats JS</h2>
+                    <h2>Jonpo'lat</h2>
                 </div>
                 <ul class="d-flex navigator">
                     <li><a href="#" class="nav_active">Home</a></li>
                     <li><a href="#">Components</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-                <button type="button" class="darkMode-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-moon w-5 h-5">
-                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
-                    </svg>
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                <div class="d-flex">
+                    <button type="button" class="darkMode-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-moon w-5 h-5">
+                            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                        </svg>
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-sun w-5 h-5">
                         <circle cx="12" cy="12" r="4"></circle>
@@ -45,7 +46,24 @@
                         <path d="m6.34 17.66-1.41 1.41"></path>
                         <path d="m19.07 4.93-1.41 1.41"></path>
                     </svg> -->
-                </button>
+                    </button>
+                    <div class="burger">
+                        <button type="button" class="burger-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-menu w-5 h-5">
+                                <line x1="4" x2="20" y1="12" y2="12"></line>
+                                <line x1="4" x2="20" y1="6" y2="6"></line>
+                                <line x1="4" x2="20" y1="18" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <p class="nav-menu__active">Home</p>
+                <p>Components</p>
+                <p>Contact</p>
             </div>
         </nav>
     </header>

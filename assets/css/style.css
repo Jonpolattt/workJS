@@ -65,6 +65,8 @@
   --bg-nav: rgba(255, 255, 255, 0.6);
   --border-color: rgba(183, 183, 183, 0.637);
   --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.167);
+  --btn-color: white;
+  --btn-bg-color: oklch(95% 0.0058 264.53);
 }
 .dark {
   --bg-color: black;
@@ -72,6 +74,11 @@
   --bg-nav: rgba(0, 0, 0, 0.6);
   --border-color: rgba(74, 74, 74, 0.514);
   --box-shadow: 0 4px 20px rgba(40, 40, 40, 0.504);
+  --btn-bg-color: var(--secondary);
+}
+
+.darkMode-btn {
+  background-color: var(--btn-bg-color) !important;
 }
 
 body {
@@ -125,6 +132,7 @@ body {
   opacity: 1;
   pointer-events: auto;
 }
+
 /* HEADER */
 header {
   height: 100px;
@@ -176,11 +184,11 @@ ul li {
 .nav ul li {
   padding: 0px 25px;
 }
-.nav ul li a {
+.navigator li a {
   color: var(--text-color);
   transition: all 0.2s;
 }
-.nav ul li a:hover {
+.navigator li a:hover {
   color: var(--color-purple-600);
 }
 .nav button {
@@ -195,6 +203,50 @@ ul li {
 .nav button:hover {
   transform: scale(103%);
 }
+
+/* BURGER */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger p {
+  width: 25px;
+  transition: 0.3s;
+}
+.nav-menu {
+  padding: 0px;
+  /* transition: all 0.2s; */
+  opacity: 0;
+  height: 0;
+}
+.burger-btn {
+  background-color: var(--btn-bg-color) !important;
+  margin-left: 14px;
+}
+.active {
+  opacity: 1;
+  padding: 18px;
+  height: 100%;
+}
+.nav-menu {
+}
+.nav-menu p {
+  padding: 10px;
+  /* background-color: var(--primary); */
+  margin: 5px;
+  color: var(--text-color);
+  background-color: var(--btn-bg-color);
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.nav-menu__active {
+  background-color: var(--primary) !important;
+}
+
+/* HEADER */
 
 /* Main */
 .home {
@@ -249,5 +301,113 @@ ul li {
 
 .btn-pur {
   background-color: var(--primary);
-  color: var(--text-color);
+  color: var(--btn-color);
+}
+
+/* ===================== */
+/* Large tablets */
+/* ===================== */
+
+@media (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+}
+
+/* ===================== */
+/* Tablets */
+/* ===================== */
+
+@media (max-width: 992px) {
+  .d-flex {
+    justify-content: space-between;
+  }
+
+  .nav ul li {
+    padding: 0 15px;
+  }
+
+  .home h1 {
+    font-size: 3rem;
+  }
+
+  .home p {
+    font-size: 1.1rem;
+  }
+
+  .hero .d-flex {
+    display: block;
+  }
+
+  .here button {
+    width: 100%;
+  }
+
+  .up-button {
+    margin: 0;
+  }
+}
+
+/* ===================== */
+/* Mobile */
+/* ===================== */
+
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+  header {
+    height: 80px;
+  }
+
+  nav {
+    padding: 12px;
+  }
+
+  .nav ul {
+    display: none; /* меню скрываем */
+  }
+
+  .home {
+    margin-top: 80px;
+    padding: 0 20px;
+  }
+
+  .home h1 {
+    font-size: 2.3rem;
+  }
+
+  .home p {
+    font-size: 1rem;
+  }
+
+  .home button {
+    padding: 1rem 1.8rem;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+}
+
+/* ===================== */
+/* Small phones */
+/* ===================== */
+
+@media (max-width: 480px) {
+  .home h1 {
+    font-size: 1.8rem;
+  }
+
+  .home_subtitle {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  .home p {
+    font-size: 0.9rem;
+  }
+
+  .up-wrapper {
+    right: 15px;
+    bottom: 15px;
+  }
 }
