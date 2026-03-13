@@ -17,16 +17,23 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 
   //   Up BUTTON
-  const upBtnWrapper = document.querySelector(".up-wrapper");
+  const upBtn = document.querySelector(".up-wrapper");
 
-  window.addEventListener('scroll', function () {
-    if (window.scrollY >= 100) {
-        upBtnWrapper.classList.add('show')
+  window.addEventListener("scroll", function () {
+    if (window.scrollY >= 250) {
+      upBtn.classList.add("show");
     } else {
-        upBtnWrapper.classList.remove('show')
+      upBtn.classList.remove("show");
     }
-  })
+  });
 
+  upBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+  
   //   Navigator
   const navWrapper = document.querySelector(".navigator"),
     tabs = navWrapper.querySelectorAll("li a");

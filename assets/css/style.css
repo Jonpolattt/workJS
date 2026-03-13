@@ -100,29 +100,31 @@ body {
 /* Up dtn */
 .up-wrapper {
   position: fixed;
-  left: 0;
-  right: 0;
-  text-align: right;
-  display: none;
-  transition: all 0.3s;
+  right: 30px;
+  bottom: 30px;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
 }
 .up-button {
   float: right;
   border: none;
   outline: none;
   background-color: #7b84ff;
-  padding: 14px;
+  padding: 10px 12px;
   border-radius: 50%;
   margin-top: 100px;
   margin-right: 100px;
-  /* color: white; */
-  transition: all 0.3s;
+  color: white;
+  transition: all 0.1s ease-in-out;
 }
-.show {
-  display: block !important;
-  transition: all 0.3s;
+.up-button:hover {
+  transform: scale(110%);
 }
-
+.up-wrapper.show {
+  opacity: 1;
+  pointer-events: auto;
+}
 /* HEADER */
 header {
   height: 100px;
