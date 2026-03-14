@@ -92,7 +92,6 @@ body {
     BlinkMacSystemFont,
     Segoe UI,
     sans-serif;
-  height: 200vh;
   background-color: var(--bg-color);
 }
 
@@ -152,6 +151,7 @@ nav {
   backdrop-filter: blur(15px);
   transition: all 0.5s;
   z-index: 99999;
+  height: 70px;
 }
 .fix {
   box-shadow: var(--box-shadow);
@@ -234,8 +234,6 @@ ul li {
   opacity: 1;
   padding: 18px;
   height: 100%;
-}
-.nav-menu {
 }
 .nav-menu p {
   padding: 10px;
@@ -348,6 +346,11 @@ ul li {
   color: var(--muted-foreground);
   font-size: 20px;
 }
+.card-wrpapper .d-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
 .card {
   border: 1px solid rgba(143, 143, 143, 0.23);
@@ -355,9 +358,11 @@ ul li {
   border-radius: 10px;
   box-shadow: var(--card-box-shadow);
   margin: 10px;
-  width: 500px;
+  width: 30%;
+  min-width: 280px;
   height: 180px;
   cursor: default;
+  transition: all 0.3s;
 }
 .card div {
   display: flex;
@@ -385,6 +390,52 @@ ul li {
 }
 .card6 {
   background-color: var(--color-rose-500);
+}
+.hover1:hover {
+  border-color: color-mix(in oklab, var(--primary) 50%, transparent);
+  background-color: color-mix(in oklab, #818df844 50%, transparent);
+  margin-top: -5px;
+}
+.hover2:hover {
+  border-color: color-mix(in oklab, var(--primary) 50%, transparent);
+  background-color: color-mix(
+    in oklab,
+    oklch(68.45% 0.3046 331.936 / 0.149) 50%,
+    transparent
+  );
+  margin-top: -5px;
+}
+.hover3:hover {
+  border-color: color-mix(in oklab, var(--primary) 50%, transparent);
+  background-color: color-mix(
+    in oklab,
+    oklch(70.09% 0.20117 44.755 / 0.267) 50%,
+    transparent
+  );
+  margin-top: -5px;
+}
+.hover4:hover {
+  border-color: color-mix(in oklab, var(--primary) 50%, transparent);
+  background-color: color-mix(
+    in oklab,
+    oklch(72.887% 0.21192 147.841 / 0.27) 50%,
+    transparent
+  );
+  margin-top: -5px;
+}
+.hover5:hover {
+  border-color: color-mix(in oklab, var(--primary) 50%, transparent);
+  background-color: color-mix(in oklab, #818df844 50%, transparent);
+  margin-top: -5px;
+}
+.hover6:hover {
+  border-color: color-mix(in oklab, var(--primary) 50%, transparent);
+  background-color: color-mix(
+    in oklab,
+    oklch(64.382% 0.24527 15.909 / 0.259) 50%,
+    transparent
+  );
+  margin-top: -5px;
 }
 .card h3 {
   font-size: 24px;
@@ -437,6 +488,11 @@ ul li {
   .up-button {
     margin: 0;
   }
+
+  /* FEATURES */
+  .card {
+    width: 45%;
+  }
 }
 
 /* ===================== */
@@ -477,6 +533,24 @@ ul li {
     font-size: 0.9rem;
     width: 100%;
   }
+
+  /* FEATURES */
+  #features {
+    padding: 50px 20px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .features-content h1 {
+    font-size: 32px;
+  }
+
+  .features-content p {
+    font-size: 16px;
+  }
 }
 
 /* ===================== */
@@ -500,5 +574,18 @@ ul li {
   .up-wrapper {
     right: 15px;
     bottom: 15px;
+  }
+
+  /* FEATURES */
+  .card {
+    padding: 15px;
+  }
+
+  .card h3 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 15px;
   }
 }
