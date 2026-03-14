@@ -330,8 +330,8 @@ ul li {
 
 /* FEATURES */
 #features {
-  margin-top: 128px;
-  padding: 80px;
+  margin-top: 260px;
+  padding: 40px;
   background-color: var(--features-bg-color);
 }
 .features-content {

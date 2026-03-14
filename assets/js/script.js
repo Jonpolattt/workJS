@@ -65,6 +65,6 @@ window.addEventListener("DOMContentLoaded", function () {
     burgerBtn = document.querySelector(".burger-btn");
 
   burgerBtn.addEventListener("click", function () {
-    burger.classList.toggle('active')
+    burger.classList.toggle("active");
   });
 });
