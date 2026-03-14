@@ -67,6 +67,8 @@
   --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.167);
   --btn-color: white;
   --btn-bg-color: oklch(95% 0.0058 264.53);
+  --features-bg-color: rgba(231, 231, 231, 0.345);
+  --card-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.103);
 }
 .dark {
   --bg-color: black;
@@ -75,6 +77,7 @@
   --border-color: rgba(74, 74, 74, 0.514);
   --box-shadow: 0 4px 20px rgba(40, 40, 40, 0.504);
   --btn-bg-color: var(--secondary);
+  --features-bg-color: color-mix(in oklab, var(--secondary) 30%, transparent);
 }
 
 .darkMode-btn {
@@ -324,6 +327,73 @@ ul li {
 .btn-pramiry {
   background-color: var(--btn-bg-color);
   color: var(--text-color);
+}
+/* /HOME */
+
+/* FEATURES */
+#features {
+  margin-top: 128px;
+  padding: 80px;
+  background-color: var(--features-bg-color);
+}
+.features-content {
+  text-align: center;
+  padding-bottom: 70px;
+}
+.features-content h1 {
+  color: var(--text-color);
+  font-size: 49px;
+}
+.features-content p {
+  color: var(--muted-foreground);
+  font-size: 20px;
+}
+
+.card {
+  border: 1px solid rgba(143, 143, 143, 0.23);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: var(--card-box-shadow);
+  margin: 10px;
+  width: 500px;
+  height: 180px;
+  cursor: default;
+}
+.card div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+}
+.card1 {
+  background-color: var(--color-blue-500);
+}
+.card2 {
+  background-color: var(--color-pink-500);
+}
+.card3 {
+  background-color: var(--color-orange-500);
+}
+.card4 {
+  background-color: var(--color-green-500);
+}
+.card5 {
+  background-color: var(--color-blue-500);
+}
+.card6 {
+  background-color: var(--color-rose-500);
+}
+.card h3 {
+  font-size: 24px;
+  padding: 8px 0px;
+  color: var(--text-color);
+}
+.card p {
+  color: oklch(56.926% 0.00006 271.152);
+  font-size: 17px;
 }
 /* ===================== */
 /* Large tablets */
