@@ -67,4 +67,7 @@ window.addEventListener("DOMContentLoaded", function () {
   burgerBtn.addEventListener("click", function () {
     burger.classList.toggle("active");
   });
+
+  //   CARUSEL
+  
 });
