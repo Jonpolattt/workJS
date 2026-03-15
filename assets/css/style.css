@@ -47,7 +47,7 @@
   --color-green-500: oklch(72.3% 0.219 149.579);
   --color-emerald-500: oklch(69.6% 0.17 162.48);
   --color-cyan-500: oklch(71.5% 0.143 215.221);
-  --color-blue-500: oklch(62.3% 0.214 259.815);
+  --color-blue-500: oklch(63.833% 0.19498 258.769);
   --color-indigo-500: oklch(58.5% 0.233 277.117);
   --color-violet-500: oklch(60.6% 0.25 292.717);
   --color-purple-500: oklch(62.7% 0.265 303.9);
@@ -146,13 +146,13 @@ nav {
   right: 0;
   top: 0;
   background-color: var(--bg-color);
-  padding: 17px;
+  padding: 12px;
   background: var(--bg-nav);
   -webkit-backdrop-filter: blur(15px);
   backdrop-filter: blur(15px);
   transition: all 0.5s;
   z-index: 99999;
-  height: 70px;
+  /* height: 70px; */
 }
 .fix {
   box-shadow: var(--box-shadow);
@@ -222,20 +222,20 @@ ul li {
   transition: 0.3s;
 }
 .nav-menu {
-  padding: 0px;
+  padding: 18px;
   /* transition: all 0.2s; */
-  opacity: 0;
   height: 0;
+  display: none;
+}
+.nav-menu__active {
+  display: block;
+  height: 100%;
 }
 .burger-btn {
   background-color: var(--btn-bg-color) !important;
   margin-left: 14px;
 }
-.active {
-  opacity: 1;
-  padding: 18px;
-  height: 100%;
-}
+
 .nav-menu p {
   padding: 10px;
   /* background-color: var(--primary); */
@@ -245,7 +245,7 @@ ul li {
   border-radius: 10px;
   transition: all 0.5s;
 }
-.nav-menu__active {
+.nav-menu_a {
   background-color: var(--primary) !important;
 }
 
@@ -467,9 +467,77 @@ ul li {
   font-size: 19px;
   padding-top: 8px;
 }
+.carusel-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+/*  */
+.carousel {
+  position: relative;
+  margin: auto;
+  width: 894.4px;
+  overflow: hidden;
+}
 
+.carousel-track-container {
+  overflow: hidden;
+}
+.carousel-track {
+  display: flex;
+  transition: transform 0.7s ease;
+}
 
+/* slide styles */
+.slide {
+  text-align: center;
+  color: white;
+  min-width: 100%;
+  height: 502.4px;
+  border-radius: 15px;
+}
+.slide-content {
+  padding-top: 200px;
+  width: 100%;
+  display: block;
+}
+.slide1 {
+  background: linear-gradient(
+    90deg,
+    var(--color-purple-500),
+    var(--color-fuchsia-500)
+  );
+}
+.slide2 {
+  background: linear-gradient(
+    90deg,
+    var(--color-blue-500),
+    var(--color-indigo-500)
+  );
+}
+.slide3 {
+  background: linear-gradient(
+    90deg,
+    var(--color-red-500),
+    var(--color-pink-500)
+  );
+}
+.carusel-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carusel-btns button {
+  margin: 18px 10px;
+  background-color: #7b84ff;
+  color: white;
+  border: none;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
 
 /* /CORUSEL */
 
@@ -530,13 +598,10 @@ ul li {
   .burger {
     display: flex;
   }
-  header {
-    height: 80px;
-  }
 
-  nav {
+  /* nav {
     padding: 12px;
-  }
+  } */
 
   .nav ul {
     display: none; /* меню скрываем */
