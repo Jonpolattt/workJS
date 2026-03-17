@@ -8,8 +8,14 @@
   --btn-bg-color: oklch(95% 0.0058 264.53);
   --features-bg-color: rgba(231, 231, 231, 0.345);
   --card-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.103);
+  --secondary: oklch(95% 0.0058 264.53);
 }
-
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
 .components-titless {
   text-align: center;
   padding: 50px 0px;
@@ -31,4 +37,30 @@
 .tab-title {
   color: var(--text-color);
   margin: 14px 0px;
+}
+
+/* Tabs */
+.tab-container {
+  background-color: var(--secondary);
+  padding: 5px 5px;
+  border-radius: 10px;
+  color: var(--text-color);
+}
+.tab-header__items {
+  display: flex;
+  align-items: center;
+}
+.tabheader__item {
+  /* margin: 0px 30px; */
+  padding: 15px;
+  border-radius: 10px;
+  cursor: default;
+}
+.tabheader__item p {
+  padding: 0px 10px;
+}
+
+.tabheader__item_active {
+  background-color: #6366f1;
+  color: white !important;
 }

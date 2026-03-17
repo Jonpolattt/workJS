@@ -78,8 +78,14 @@
   --box-shadow: 0 4px 20px rgba(40, 40, 40, 0.504);
   --btn-bg-color: var(--secondary);
   --features-bg-color: color-mix(in oklab, var(--secondary) 30%, transparent);
+  --secondary: oklch(26.9% 0 0);
 }
-
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
 .darkMode-btn {
   background-color: var(--btn-bg-color) !important;
 }

@@ -141,4 +141,18 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 
   autoSlide();
+
+  // TABS
+  const tabs = document.querySelectorAll(".tabheader__item"),
+    tabContents = document.querySelectorAll(".tab_content"),
+    tabParent = document.querySelector(".tabheader__items");
+
+  function hideTabContent() {
+    tabContents.forEach((item, index) => {
+      item.classList.add('hide');
+      item.classList.remove('show')
+    });
+  }
+
+  hideTabContent()
 });
