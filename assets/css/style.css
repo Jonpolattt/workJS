@@ -287,6 +287,9 @@ ul li {
   border-radius: 10px;
   transition: all 0.5s;
 }
+.nav-menu p a {
+  color: var(--text-color) !important;
+}
 .nav-menu_a {
   background-color: var(--primary) !important;
 }
