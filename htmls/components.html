@@ -251,6 +251,78 @@
                 </div>
             </div>
         </section>
+        <!-- Tabs -->
+
+        <!-- Accordion / FAQ -->
+        <section id="faq">
+            <div class="faq">
+                <h2 class="faq-title">Accordion / FAQ</h2>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What technologies are used in this project?
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        This project is built with HTML5, JS, CSS v4, Motion (formerly Framer
+                        Motion) for animations.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Are these components accessible?
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! All components are built with accessibility in mind using Radix UI primitives, which
+                        provide excellent keyboard navigation, screen reader support, and ARIA attributes out of the
+                        box.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can I use these components in my project?
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely! These components are designed to be reusable and easily customizable. You can copy
+                        the code and adapt it to fit your specific needs and design system.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Do the components support dark mode?
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, all components fully support both light and dark modes. The theme automatically switches
+                        based on your system preference or manual selection via the theme toggle.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Are the components responsive?
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        All components are fully responsive and optimized for desktop, tablet, and mobile devices. They
+                        use modern CSS techniques and Tailwind's responsive utilities for seamless adaptation.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal -->
+        <section id="modal">
+            <div class="container">
+                <h1>Modal Window</h1>
+                <button class="modal-btn btn-pur" type="button">Open Modal</button>
+            </div>
+        </section>
     </main>
     <!-- Main -->
 
@@ -324,6 +396,34 @@
 
     </footer>
     <!-- / footer -->
+
+    <div class="modal-wrapper hide" id="modal">
+        <div class="modal">
+            <div class="modal-content">
+                <div class="d-flex">
+                    <h2>Welcome to the Modal!</h2>
+                    <button class="modal-close close" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-x w-5 h-5">
+                            <path d="M18 6 6 18"></path>
+                            <path d="m6 6 12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <p>This is a beautiful modal window built with Radix UI Dialog. It features smooth
+                    animations,
+                    keyboard navigation, and accessibility features like focus trapping and screen reader
+                    support.
+                </p>
+                <div class="d-flex">
+                    <button type="button" class="btn-pur close">Got it!</button>
+                    <button type="button" class="btn-pramiry close">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- UP BUTTON -->
     <div class="up-wrapper">

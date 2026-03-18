@@ -37,4 +37,50 @@ window.addEventListener("DOMContentLoaded", function () {
 
   hideTabContent();
   showTabContent();
+
+  //   FAQ
+  const faqItems = document.querySelectorAll(".faq-item");
+
+  faqItems.forEach((item) => {
+    const question = item.querySelector(".faq-question");
+
+    question.addEventListener("click", () => {
+      faqItems.forEach((el) => {
+        if (el !== item) el.classList.remove("active");
+      });
+
+      item.classList.toggle("active");
+    });
+  });
+
+  //   MODAL
+  const openModalBtn = document.querySelector(".modal-btn"),
+    closeModalBtns = document.querySelectorAll(".close"),
+    modal = document.querySelector(".modal-wrapper");
+
+  function openModal() {
+    modal.classList.add("flex");
+    modal.classList.remove("hide");
+  }
+
+  function closeModal() {
+    modal.classList.add("hide");
+    modal.classList.remove("flex");
+  }
+
+  openModalBtn.addEventListener("click", function (e) {
+    openModal();
+  });
+
+  closeModalBtns.forEach((item, index) => {
+    item.addEventListener("click", function (e) {
+      closeModal();
+    });
+  });
+
+  modal.addEventListener("click", function (e) {
+    if (e.target.classList === modal.classList) {
+      closeModal();
+    }
+  });
 });
