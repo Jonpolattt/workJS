@@ -70,6 +70,8 @@
   --features-bg-color: rgba(231, 231, 231, 0.345);
   --card-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.103);
   --card: white;
+  --input-background: #f3f3f5;
+  --placeholder-color: rgb(91, 91, 91);
 }
 .dark {
   --bg-color: black;
@@ -81,6 +83,8 @@
   --features-bg-color: color-mix(in oklab, var(--secondary) 30%, transparent);
   --secondary: oklch(26.9% 0 0);
   --card: #131318;
+  --input-background: #212121;
+  --placeholder-color: rgb(197, 197, 197);
 }
 .darkMode-btn {
   background-color: var(--btn-bg-color) !important;

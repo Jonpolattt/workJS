@@ -12,6 +12,8 @@
   --color: oklch(56.926% 0.00006 271.152);
   --border-color: oklch(71.871% 0.00008 271.152);
   --card: white;
+  --input-background: #f3f3f5;
+  --placeholder-color: rgb(91, 91, 91);
 }
 
 #contact-us {
@@ -33,10 +35,75 @@
   color: var(--color);
   font-size: 17px;
 }
-
-
+.cards {
+  margin-top: 50px;
+}
 .contact {
-    border: 1px solid var(--btn-bg-color);
-    padding: 24px;
-    box-shadow: var(--card-box-shadow);
+  border: 1px solid var(--btn-bg-color);
+  padding: 24px;
+  box-shadow: var(--card-box-shadow);
+  width: 50%;
+  border-radius: 15px;
+  margin-right: 24px;
+}
+.contact h2 {
+  color: var(--text-color);
+}
+.contact form div {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0px;
+}
+.contact form label {
+  color: var(--text-color);
+  padding: 5px;
+  font-size: 18px;
+}
+.contact form input::placeholder {
+  color: var(--placeholder-color);
+  font-size: 16px;
+}
+.contact form input,
+textarea {
+  background-color: var(--input-background);
+  border: none;
+  width: 100%;
+  padding: 18px 10px;
+  border-radius: 15px;
+  color: var(--text-color);
+  font-size: 18px;
+  transition: all 0.1s;
+}
+.contact form textarea {
+  width: 100%;
+  height: 170px;
+  resize: none;
+}
+.contact form input:focus,
+textarea:focus-visible {
+  outline: 4px solid color-mix(in oklab, var(--primary) 50%, transparent);
+}
+
+.submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 2.1rem;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 0;
+  text-decoration: none;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+  margin-top: 16px;
+  width: 100%;
+}
+.submit-btn p {
+  padding-left: 10px;
+}
+.submit-btn:hover {
+  transform: scale(102%);
 }
