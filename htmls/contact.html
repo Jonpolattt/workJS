@@ -7,6 +7,10 @@
     <!-- css -->
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="./styles/contact.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>WORK | PROJECT</title>
 </head>
 
@@ -15,10 +19,10 @@
     <header>
         <nav class="nav">
             <div class="d-flex">
-                <div class="d-flex">
+                <a class="d-flex" href="../index.html">
                     <span>JS</span>
                     <h2>Jonpo'lat</h2>
-                </div>
+                </a>
                 <ul class="d-flex navigator">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="components.html">Components</a></li>
@@ -31,19 +35,6 @@
                             class="lucide lucide-moon w-5 h-5">
                             <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
                         </svg>
-                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-sun w-5 h-5">
-                        <circle cx="12" cy="12" r="4"></circle>
-                        <path d="M12 2v2"></path>
-                        <path d="M12 20v2"></path>
-                        <path d="m4.93 4.93 1.41 1.41"></path>
-                        <path d="m17.66 17.66 1.41 1.41"></path>
-                        <path d="M2 12h2"></path>
-                        <path d="M20 12h2"></path>
-                        <path d="m6.34 17.66-1.41 1.41"></path>
-                        <path d="m19.07 4.93-1.41 1.41"></path>
-                    </svg> -->
                     </button>
                     <div class="burger">
                         <button type="button" class="burger-btn">
@@ -73,6 +64,7 @@
     </header>
     <!-- / HEADER -->
 
+    <!-- Main -->
     <main>
         <section id="contact-us">
             <div class="container">
@@ -83,38 +75,51 @@
                 <div class="cards">
 
                     <div class="contact">
-                        <h2>Send us a Message</h2>
+                        <div class="contact-card">
+                            <h2>Send us a Message</h2>
 
-                        <form action="#" id="form">
-                            <div>
-                                <label for="name">Name</label>
-                                <input type="text" placeholder="Jonpo'lat" name="user_name" id="name" required>
-                            </div>
-                            <div>
-                                <label for="email">Email</label>
-                                <input type="email" placeholder="jonpo'lat@gmai.com" name="user_email" id="email"
-                                    required>
-                            </div>
+                            <form action="#" id="form">
+                                <div>
+                                    <label for="name">Name</label>
+                                    <input type="text" placeholder="Jonpo'lat" name="user_name" id="name" required>
+                                </div>
+                                <div>
+                                    <label for="email">Email</label>
+                                    <input type="email" placeholder="jonpo'lat@gmai.com" name="user_email" id="email"
+                                        required>
+                                </div>
 
+                                <div>
+                                    <label for="text">Message</label>
+                                    <textarea name="message" placeholder="Tell us about your project..." required
+                                        id="message"></textarea>
+                                    <p class="error-massage">Message must be at least 10 characters</p>
+                                </div>
+                                <button type="submit" class="submit-btn btn-pur">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-send w-5 h-5">
+                                        <path
+                                            d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z">
+                                        </path>
+                                        <path d="m21.854 2.147-10.94 10.939"></path>
+                                    </svg>
+                                    <p> Send Message</p>
+                                </button>
+                            </form>
+                        </div>
+
+
+                        <div class="suc-modal">
                             <div>
-                                <label for="text">Message</label>
-                                <textarea name="message" placeholder="Tell us about your project..." required
-                                    id="message"></textarea>
-                                <p class="error-massage">Message must be at least 10 characters</p>
+                                <i class="fa-solid fa-check"></i>
                             </div>
-                            <button type="submit" class="submit-btn btn-pur">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="lucide lucide-send w-5 h-5">
-                                    <path
-                                        d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z">
-                                    </path>
-                                    <path d="m21.854 2.147-10.94 10.939"></path>
-                                </svg>
-                                <p> Send Message</p>
-                            </button>
-                        </form>
+                            <h2>Thank You!</h2>
+                            <p> Your message has been sent successfully. We'll get back to you soon!</p>
+                        </div>
+
                     </div>
+
 
                     <div class="about_us">
                         <h2>Contact Information</h2>
@@ -209,8 +214,8 @@
                 </div>
             </div>
         </section>
-
     </main>
+    <!-- / Main -->
 
     <!-- footer -->
     <footer>
@@ -230,9 +235,9 @@
                     <div class="footer-links">
                         <h2>Quick Links</h2>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Components</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="./components.html">Components</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
                         </ul>
                     </div>
 
@@ -274,11 +279,9 @@
                 </div>
             </div>
         </div>
-
         <div class="foo-bottom">
             Made by Ravshanov Jonpo'lat © 2026
         </div>
-
     </footer>
     <!-- / footer -->
 
@@ -299,6 +302,7 @@
     <script src="../assets/js/app.js"></script>
     <script src="../assets/js/contact.js"></script>
 
+    <!-- email js -->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </body>
 

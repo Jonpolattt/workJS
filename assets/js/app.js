@@ -44,18 +44,6 @@ window.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  //   Loader
-  const loader = document.querySelector(".loader-wrapper");
-  document.body.classList.add("loading");
-  setTimeout(() => {
-    loader.style.opacity = "0";
-
-    setTimeout(() => {
-      loader.style.display = "none";
-      document.body.classList.remove("loading");
-    }, 500);
-  }, 500);
-
   // Navbar
   const nav = document.querySelector(".nav");
   window.addEventListener("scroll", function () {
@@ -89,5 +77,5 @@ window.addEventListener("DOMContentLoaded", function () {
 
   burgerBtn.addEventListener("click", function () {
     burger.classList.toggle("nav-menu__active");
-  }); 
+  });
 });
