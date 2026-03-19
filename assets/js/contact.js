@@ -8,12 +8,10 @@ window.addEventListener("DOMContentLoaded", function () {
     sucmodal.style.display = "block";
     contact.style.display = "none";
   }
-
   function hideModal() {
     sucmodal.style.display = "none";
     contact.style.display = "block";
   }
-
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
